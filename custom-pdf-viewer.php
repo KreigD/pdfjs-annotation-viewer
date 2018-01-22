@@ -3,10 +3,6 @@
    Plugin Name: Custom PDF Viewer
    description: A plugin to allow the user to view and annotate PDFs, custom for Oliver Rose, LLC.
    */
-?>
-
-<?php
-
 
 add_action( 'wp_enqueue_scripts', 'pdf_enqueue_scripts', 15 );
 function pdf_enqueue_scripts() {
