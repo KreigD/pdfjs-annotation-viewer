@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            width:100%;
+            height:100%;
+            margin:0px;
+            padding:0px;
+            overflow:hidden;
+        }
+
+        #viewer {
+            height: calc(100% - 30px);
+            overflow: hidden;
+        }
+
+        #fileSelectionContainer {
+            height: 30px;
+            width: 100%;
+        }
+
+        #fileSelectionContainer * {
+            margin-left: 10px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        input {
+            height: 16px;
+        }
+    </style>
+
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../lib/WebViewer.min.js"></script>
+    <script src="../../lib/html5/ControlUtils.js"></script>
+    <script>
+
+    $(function() {
+        var queryParams = window.ControlUtils.getQueryStringMap(false);
+        var docType = queryParams.getString('doctype', 'xod');
+
+        var viewerElement = document.getElementById('viewer');
+        var myWebViewer = new PDFTron.WebViewer({
+            type: "html5",
+            path: "../../lib",
+            initialDoc: "../../doc/WebViewer_Developer_Guide." + docType,
+            documentType: docType,
+            documentId: "webviewer_developer_guide",
+            enableAnnotations: true,
+            mobileRedirect: false
+        }, viewerElement);
+
+        var files;
+        if (docType === 'xod') {
+            files = [
+                '../../doc/WebViewer_Developer_Guide.xod',
+                '../../doc/WebViewer_User_Guide.xod',
+                '../files/form1.xod',
+                '../files/form-actions.xod',
+                '../files/tiger.xod',
+            ];
+        } else {
+            files = [
+                '../../doc/WebViewer_Developer_Guide.pdf',
+                '../../doc/WebViewer_User_Guide.pdf',
+                '../files/form1.pdf',
+                '../files/form-actions.pdf',
+                '../files/korea.pdf'
+            ];
+        }
+
+        var fileSelectionContainer = $('#fileSelectionContainer');
+
+        $(viewerElement).on('ready', function() {
+            var dropdown = $('<select></select>');
+            for (var i = 0; i < files.length; ++i) {
+            var option = $('<option>' + files[i] + '</option>');
+                dropdown.append(option);
+            }
+
+            dropdown.on('change', function() {
+                var filePath = this.value;
+                setTimeout(function() {
+                    myWebViewer.loadDocument(filePath);
+                }, 0);
+            });
+            fileSelectionContainer.prepend(dropdown);
+        });
+
+        var $docUrlInput = $('#docUrlInput');
+
+        $('#loadButton').on('click', function() {
+            var docUrl = $docUrlInput.val();
+            if (docUrl === '') {
+                alert('Please enter a URL to load');
+            } else {
+                myWebViewer.loadDocument(docUrl);
+            }
+        });
+
+        $docUrlInput.on('keydown', function(e) {
+            if (e.keyCode === 13) {
+                 $(this).siblings('button').trigger('click');
+            }
+        });
+    });
+    </script>
+
+</head>
+
+<body>
+    <div id="fileSelectionContainer"><input id="docUrlInput" type="text" placeholder="Enter a URL..."><button id="loadButton">Load file</button></div>
+    <div id="viewer"></div>
+</body>
+</html>

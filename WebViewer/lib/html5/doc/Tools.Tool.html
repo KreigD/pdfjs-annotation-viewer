@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PDFTron WebViewer HTML5 Class: Tool</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">PDFTron WebViewer HTML5</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Actions.html">Actions</a></li><li><a href="Annotations.html">Annotations</a></li><li><a href="Annotations.SelectionAlgorithm.html">Annotations.SelectionAlgorithm</a></li><li><a href="CoreControls.html">CoreControls</a></li><li><a href="PartRetrievers.html">PartRetrievers</a></li><li><a href="Tools.html">Tools</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Actions.Action.html">Actions.Action</a></li><li><a href="Actions.Dispatcher.html">Actions.Dispatcher</a></li><li><a href="Actions.GoTo.html">Actions.GoTo</a></li><li><a href="Actions.GoTo.Dest.html">Actions.GoTo.Dest</a></li><li><a href="Actions.Hide.html">Actions.Hide</a></li><li><a href="Actions.JavaScript.html">Actions.JavaScript</a></li><li><a href="Actions.Named.html">Actions.Named</a></li><li><a href="Actions.ResetForm.html">Actions.ResetForm</a></li><li><a href="Actions.SubmitForm.html">Actions.SubmitForm</a></li><li><a href="Actions.URI.html">Actions.URI</a></li><li><a href="Annotations.Annotation.html">Annotations.Annotation</a></li><li><a href="Annotations.BoxControlHandle.html">Annotations.BoxControlHandle</a></li><li><a href="Annotations.BoxSelectionModel.html">Annotations.BoxSelectionModel</a></li><li><a href="Annotations.ButtonWidgetAnnotation.html">Annotations.ButtonWidgetAnnotation</a></li><li><a href="Annotations.CalloutControlHandle.html">Annotations.CalloutControlHandle</a></li><li><a href="Annotations.CalloutSelectionModel.html">Annotations.CalloutSelectionModel</a></li><li><a href="Annotations.CaretAnnotation.html">Annotations.CaretAnnotation</a></li><li><a href="Annotations.CheckButtonWidgetAnnotation.html">Annotations.CheckButtonWidgetAnnotation</a></li><li><a href="Annotations.ChoiceWidgetAnnotation.html">Annotations.ChoiceWidgetAnnotation</a></li><li><a href="Annotations.Color.html">Annotations.Color</a></li><li><a href="Annotations.ControlHandle.html">Annotations.ControlHandle</a></li><li><a href="Annotations.EllipseAnnotation.html">Annotations.EllipseAnnotation</a></li><li><a href="Annotations.Font.html">Annotations.Font</a></li><li><a href="Annotations.Forms.html">Annotations.Forms</a></li><li><a href="Annotations.Forms.Field.html">Annotations.Forms.Field</a></li><li><a href="Annotations.Forms.FieldManager.html">Annotations.Forms.FieldManager</a></li><li><a href="Annotations.FreeHandAnnotation.html">Annotations.FreeHandAnnotation</a></li><li><a href="Annotations.FreeTextAnnotation.html">Annotations.FreeTextAnnotation</a></li><li><a href="Annotations.FreeTextSelectionModel.html">Annotations.FreeTextSelectionModel</a></li><li><a href="Annotations.HTMLAnnotation.html">Annotations.HTMLAnnotation</a></li><li><a href="Annotations.IPathAnnotation.html">Annotations.IPathAnnotation</a></li><li><a href="Annotations.LineAnnotation.html">Annotations.LineAnnotation</a></li><li><a href="Annotations.LineControlHandle.html">Annotations.LineControlHandle</a></li><li><a href="Annotations.LineSelectionModel.html">Annotations.LineSelectionModel</a></li><li><a href="Annotations.Link.html">Annotations.Link</a></li><li><a href="Annotations.ListWidgetAnnotation.html">Annotations.ListWidgetAnnotation</a></li><li><a href="Annotations.MarkupAnnotation.html">Annotations.MarkupAnnotation</a></li><li><a href="Annotations.PathControlHandle.html">Annotations.PathControlHandle</a></li><li><a href="Annotations.PathSelectionModel.html">Annotations.PathSelectionModel</a></li><li><a href="Annotations.Point.html">Annotations.Point</a></li><li><a href="Annotations.PolygonAnnotation.html">Annotations.PolygonAnnotation</a></li><li><a href="Annotations.PolygonControlHandle.html">Annotations.PolygonControlHandle</a></li><li><a href="Annotations.PolygonSelectionModel.html">Annotations.PolygonSelectionModel</a></li><li><a href="Annotations.PolylineAnnotation.html">Annotations.PolylineAnnotation</a></li><li><a href="Annotations.PopupAnnotation.html">Annotations.PopupAnnotation</a></li><li><a href="Annotations.RadioButtonWidgetAnnotation.html">Annotations.RadioButtonWidgetAnnotation</a></li><li><a href="Annotations.Rect.html">Annotations.Rect</a></li><li><a href="Annotations.RectangleAnnotation.html">Annotations.RectangleAnnotation</a></li><li><a href="Annotations.SelectionModel.html">Annotations.SelectionModel</a></li><li><a href="Annotations.SignatureWidgetAnnotation.html">Annotations.SignatureWidgetAnnotation</a></li><li><a href="Annotations.StampAnnotation.html">Annotations.StampAnnotation</a></li><li><a href="Annotations.StickyAnnotation.html">Annotations.StickyAnnotation</a></li><li><a href="Annotations.TextHighlightAnnotation.html">Annotations.TextHighlightAnnotation</a></li><li><a href="Annotations.TextMarkupAnnotation.html">Annotations.TextMarkupAnnotation</a></li><li><a href="Annotations.TextSelectionModel.html">Annotations.TextSelectionModel</a></li><li><a href="Annotations.TextSquigglyAnnotation.html">Annotations.TextSquigglyAnnotation</a></li><li><a href="Annotations.TextStrikeoutAnnotation.html">Annotations.TextStrikeoutAnnotation</a></li><li><a href="Annotations.TextUnderlineAnnotation.html">Annotations.TextUnderlineAnnotation</a></li><li><a href="Annotations.TextWidgetAnnotation.html">Annotations.TextWidgetAnnotation</a></li><li><a href="Annotations.WidgetAnnotation.html">Annotations.WidgetAnnotation</a></li><li><a href="Annotations.WidgetFlags.html">Annotations.WidgetFlags</a></li><li><a href="BaseReaderControl.html">BaseReaderControl</a></li><li><a href="CoreControls.AnnotationManager.html">CoreControls.AnnotationManager</a></li><li><a href="CoreControls.Bookmark.html">CoreControls.Bookmark</a></li><li><a href="CoreControls.DisplayMode.html">CoreControls.DisplayMode</a></li><li><a href="CoreControls.DisplayModeManager.html">CoreControls.DisplayModeManager</a></li><li><a href="CoreControls.Document.html">CoreControls.Document</a></li><li><a href="CoreControls.DocumentViewer.html">CoreControls.DocumentViewer</a></li><li><a href="PartRetrievers.AndroidContentPartRetriever.html">PartRetrievers.AndroidContentPartRetriever</a></li><li><a href="PartRetrievers.AzurePartRetriever.html">PartRetrievers.AzurePartRetriever</a></li><li><a href="PartRetrievers.ExternalPdfPartRetriever.html">PartRetrievers.ExternalPdfPartRetriever</a></li><li><a href="PartRetrievers.HttpPartRetriever.html">PartRetrievers.HttpPartRetriever</a></li><li><a href="PartRetrievers.IOSPartRetriever.html">PartRetrievers.IOSPartRetriever</a></li><li><a href="PartRetrievers.LocalPartRetriever.html">PartRetrievers.LocalPartRetriever</a></li><li><a href="PartRetrievers.LocalPdfPartRetriever.html">PartRetrievers.LocalPdfPartRetriever</a></li><li><a href="PartRetrievers.StreamingPartRetriever.html">PartRetrievers.StreamingPartRetriever</a></li><li><a href="PartRetrievers.WinRTPartRetriever.html">PartRetrievers.WinRTPartRetriever</a></li><li><a href="ReaderControl.html">ReaderControl</a></li><li><a href="Tools.AnnotationEditTool.html">Tools.AnnotationEditTool</a></li><li><a href="Tools.AnnotationSelectTool.html">Tools.AnnotationSelectTool</a></li><li><a href="Tools.ArrowCreateTool.html">Tools.ArrowCreateTool</a></li><li><a href="Tools.CalloutCreateTool.html">Tools.CalloutCreateTool</a></li><li><a href="Tools.EllipseCreateTool.html">Tools.EllipseCreateTool</a></li><li><a href="Tools.FreeHandCreateTool.html">Tools.FreeHandCreateTool</a></li><li><a href="Tools.FreeTextCreateTool.html">Tools.FreeTextCreateTool</a></li><li><a href="Tools.GenericAnnotationCreateTool.html">Tools.GenericAnnotationCreateTool</a></li><li><a href="Tools.LineCreateTool.html">Tools.LineCreateTool</a></li><li><a href="Tools.PanTool.html">Tools.PanTool</a></li><li><a href="Tools.PolygonCloudCreateTool.html">Tools.PolygonCloudCreateTool</a></li><li><a href="Tools.PolygonCreateTool.html">Tools.PolygonCreateTool</a></li><li><a href="Tools.PolylineCreateTool.html">Tools.PolylineCreateTool</a></li><li><a href="Tools.RectangleCreateTool.html">Tools.RectangleCreateTool</a></li><li><a href="Tools.SignatureCreateTool.html">Tools.SignatureCreateTool</a></li><li><a href="Tools.StampCreateTool.html">Tools.StampCreateTool</a></li><li><a href="Tools.StickyCreateTool.html">Tools.StickyCreateTool</a></li><li><a href="Tools.TextAnnotationCreateTool.html">Tools.TextAnnotationCreateTool</a></li><li><a href="Tools.TextHighlightCreateTool.html">Tools.TextHighlightCreateTool</a></li><li><a href="Tools.TextSelectTool.html">Tools.TextSelectTool</a></li><li><a href="Tools.TextSquigglyCreateTool.html">Tools.TextSquigglyCreateTool</a></li><li><a href="Tools.TextStrikeoutCreateTool.html">Tools.TextStrikeoutCreateTool</a></li><li><a href="Tools.TextTool.html">Tools.TextTool</a></li><li><a href="Tools.TextUnderlineCreateTool.html">Tools.TextUnderlineCreateTool</a></li><li><a href="Tools.Tool.html">Tools.Tool</a></li><li><a href="WebViewerInterface.html">WebViewerInterface</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="Annotations.Forms.Field.html#event:calculate">Annotations.Forms.Field#event:calculate</a></li><li><a href="Annotations.Forms.Field.html#event:change">Annotations.Forms.Field#event:change</a></li><li><a href="Annotations.Forms.Field.html#event:commit">Annotations.Forms.Field#event:commit</a></li><li><a href="CoreControls.AnnotationManager.html#event:addReply">CoreControls.AnnotationManager#event:addReply</a></li><li><a href="CoreControls.AnnotationManager.html#event:annotationChanged">CoreControls.AnnotationManager#event:annotationChanged</a></li><li><a href="CoreControls.AnnotationManager.html#event:annotationDoubleClicked">CoreControls.AnnotationManager#event:annotationDoubleClicked</a></li><li><a href="CoreControls.AnnotationManager.html#event:annotationFiltered">CoreControls.AnnotationManager#event:annotationFiltered</a></li><li><a href="CoreControls.AnnotationManager.html#event:annotationHidden">CoreControls.AnnotationManager#event:annotationHidden</a></li><li><a href="CoreControls.AnnotationManager.html#event:annotationSelected">CoreControls.AnnotationManager#event:annotationSelected</a></li><li><a href="CoreControls.AnnotationManager.html#event:annotationToggled">CoreControls.AnnotationManager#event:annotationToggled</a></li><li><a href="CoreControls.AnnotationManager.html#event:deleteReply">CoreControls.AnnotationManager#event:deleteReply</a></li><li><a href="CoreControls.AnnotationManager.html#event:fieldChanged">CoreControls.AnnotationManager#event:fieldChanged</a></li><li><a href="CoreControls.AnnotationManager.html#event:notify">CoreControls.AnnotationManager#event:notify</a></li><li><a href="CoreControls.AnnotationManager.html#event:setNoteText">CoreControls.AnnotationManager#event:setNoteText</a></li><li><a href="CoreControls.DocumentViewer.html#event:beforeDocumentLoaded">CoreControls.DocumentViewer#event:beforeDocumentLoaded</a></li><li><a href="CoreControls.DocumentViewer.html#event:changePage">CoreControls.DocumentViewer#event:changePage</a></li><li><a href="CoreControls.DocumentViewer.html#event:dblClick">CoreControls.DocumentViewer#event:dblClick</a></li><li><a href="CoreControls.DocumentViewer.html#event:displayModeUpdated">CoreControls.DocumentViewer#event:displayModeUpdated</a></li><li><a href="CoreControls.DocumentViewer.html#event:displayPageLocation">CoreControls.DocumentViewer#event:displayPageLocation</a></li><li><a href="CoreControls.DocumentViewer.html#event:documentLoaded">CoreControls.DocumentViewer#event:documentLoaded</a></li><li><a href="CoreControls.DocumentViewer.html#event:fitModeUpdated">CoreControls.DocumentViewer#event:fitModeUpdated</a></li><li><a href="CoreControls.DocumentViewer.html#event:keyDown">CoreControls.DocumentViewer#event:keyDown</a></li><li><a href="CoreControls.DocumentViewer.html#event:keyUp">CoreControls.DocumentViewer#event:keyUp</a></li><li><a href="CoreControls.DocumentViewer.html#event:layoutChanged">CoreControls.DocumentViewer#event:layoutChanged</a></li><li><a href="CoreControls.DocumentViewer.html#event:linkReady">CoreControls.DocumentViewer#event:linkReady</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseEnter">CoreControls.DocumentViewer#event:mouseEnter</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseLeave">CoreControls.DocumentViewer#event:mouseLeave</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseLeftDown">CoreControls.DocumentViewer#event:mouseLeftDown</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseLeftUp">CoreControls.DocumentViewer#event:mouseLeftUp</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseMove">CoreControls.DocumentViewer#event:mouseMove</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseRightDown">CoreControls.DocumentViewer#event:mouseRightDown</a></li><li><a href="CoreControls.DocumentViewer.html#event:mouseRightUp">CoreControls.DocumentViewer#event:mouseRightUp</a></li><li><a href="CoreControls.DocumentViewer.html#event:pageComplete">CoreControls.DocumentViewer#event:pageComplete</a></li><li><a href="CoreControls.DocumentViewer.html#event:pageNumberUpdated">CoreControls.DocumentViewer#event:pageNumberUpdated</a></li><li><a href="CoreControls.DocumentViewer.html#event:rotationUpdated">CoreControls.DocumentViewer#event:rotationUpdated</a></li><li><a href="CoreControls.DocumentViewer.html#event:textSelected">CoreControls.DocumentViewer#event:textSelected</a></li><li><a href="CoreControls.DocumentViewer.html#event:toolModeUpdated">CoreControls.DocumentViewer#event:toolModeUpdated</a></li><li><a href="CoreControls.DocumentViewer.html#event:zoomUpdated">CoreControls.DocumentViewer#event:zoomUpdated</a></li><li><a href="ReaderControl.html#event:documentLoaded">ReaderControl#event:documentLoaded</a></li><li><a href="ReaderControl.html#event:fitModeChanged">ReaderControl#event:fitModeChanged</a></li><li><a href="ReaderControl.html#event:layoutModeChanged">ReaderControl#event:layoutModeChanged</a></li><li><a href="ReaderControl.html#event:pageChanged">ReaderControl#event:pageChanged</a></li><li><a href="ReaderControl.html#event:pageCompleted">ReaderControl#event:pageCompleted</a></li><li><a href="ReaderControl.html#event:viewerLoaded">ReaderControl#event:viewerLoaded</a></li><li><a href="ReaderControl.html#event:zoomChanged">ReaderControl#event:zoomChanged</a></li><li><a href="Tools.ArrowCreateTool.html#event:annotationAdded">Tools.ArrowCreateTool#event:annotationAdded</a></li><li><a href="Tools.ArrowCreateTool.html#event:annotationCreated">Tools.ArrowCreateTool#event:annotationCreated</a></li><li><a href="Tools.CalloutCreateTool.html#event:annotationAdded">Tools.CalloutCreateTool#event:annotationAdded</a></li><li><a href="Tools.CalloutCreateTool.html#event:annotationCreated">Tools.CalloutCreateTool#event:annotationCreated</a></li><li><a href="Tools.EllipseCreateTool.html#event:annotationAdded">Tools.EllipseCreateTool#event:annotationAdded</a></li><li><a href="Tools.EllipseCreateTool.html#event:annotationCreated">Tools.EllipseCreateTool#event:annotationCreated</a></li><li><a href="Tools.FreeHandCreateTool.html#event:annotationAdded">Tools.FreeHandCreateTool#event:annotationAdded</a></li><li><a href="Tools.FreeHandCreateTool.html#event:annotationCreated">Tools.FreeHandCreateTool#event:annotationCreated</a></li><li><a href="Tools.FreeTextCreateTool.html#event:annotationAdded">Tools.FreeTextCreateTool#event:annotationAdded</a></li><li><a href="Tools.FreeTextCreateTool.html#event:annotationCreated">Tools.FreeTextCreateTool#event:annotationCreated</a></li><li><a href="Tools.GenericAnnotationCreateTool.html#event:annotationAdded">Tools.GenericAnnotationCreateTool#event:annotationAdded</a></li><li><a href="Tools.GenericAnnotationCreateTool.html#event:annotationCreated">Tools.GenericAnnotationCreateTool#event:annotationCreated</a></li><li><a href="Tools.LineCreateTool.html#event:annotationAdded">Tools.LineCreateTool#event:annotationAdded</a></li><li><a href="Tools.LineCreateTool.html#event:annotationCreated">Tools.LineCreateTool#event:annotationCreated</a></li><li><a href="Tools.PolygonCloudCreateTool.html#event:annotationAdded">Tools.PolygonCloudCreateTool#event:annotationAdded</a></li><li><a href="Tools.PolygonCloudCreateTool.html#event:annotationCreated">Tools.PolygonCloudCreateTool#event:annotationCreated</a></li><li><a href="Tools.PolygonCreateTool.html#event:annotationAdded">Tools.PolygonCreateTool#event:annotationAdded</a></li><li><a href="Tools.PolygonCreateTool.html#event:annotationCreated">Tools.PolygonCreateTool#event:annotationCreated</a></li><li><a href="Tools.PolylineCreateTool.html#event:annotationAdded">Tools.PolylineCreateTool#event:annotationAdded</a></li><li><a href="Tools.PolylineCreateTool.html#event:annotationCreated">Tools.PolylineCreateTool#event:annotationCreated</a></li><li><a href="Tools.RectangleCreateTool.html#event:annotationAdded">Tools.RectangleCreateTool#event:annotationAdded</a></li><li><a href="Tools.RectangleCreateTool.html#event:annotationCreated">Tools.RectangleCreateTool#event:annotationCreated</a></li><li><a href="Tools.SignatureCreateTool.html#event:annotationAdded">Tools.SignatureCreateTool#event:annotationAdded</a></li><li><a href="Tools.SignatureCreateTool.html#event:locationSelected">Tools.SignatureCreateTool#event:locationSelected</a></li><li><a href="Tools.SignatureCreateTool.html#event:saveDefault">Tools.SignatureCreateTool#event:saveDefault</a></li><li><a href="Tools.StickyCreateTool.html#event:annotationAdded">Tools.StickyCreateTool#event:annotationAdded</a></li><li><a href="Tools.StickyCreateTool.html#event:annotationCreated">Tools.StickyCreateTool#event:annotationCreated</a></li><li><a href="Tools.TextAnnotationCreateTool.html#event:annotationAdded">Tools.TextAnnotationCreateTool#event:annotationAdded</a></li><li><a href="Tools.TextAnnotationCreateTool.html#event:annotationCreated">Tools.TextAnnotationCreateTool#event:annotationCreated</a></li><li><a href="Tools.TextHighlightCreateTool.html#event:annotationAdded">Tools.TextHighlightCreateTool#event:annotationAdded</a></li><li><a href="Tools.TextHighlightCreateTool.html#event:annotationCreated">Tools.TextHighlightCreateTool#event:annotationCreated</a></li><li><a href="Tools.TextSquigglyCreateTool.html#event:annotationAdded">Tools.TextSquigglyCreateTool#event:annotationAdded</a></li><li><a href="Tools.TextSquigglyCreateTool.html#event:annotationCreated">Tools.TextSquigglyCreateTool#event:annotationCreated</a></li><li><a href="Tools.TextStrikeoutCreateTool.html#event:annotationAdded">Tools.TextStrikeoutCreateTool#event:annotationAdded</a></li><li><a href="Tools.TextStrikeoutCreateTool.html#event:annotationCreated">Tools.TextStrikeoutCreateTool#event:annotationCreated</a></li><li><a href="Tools.TextUnderlineCreateTool.html#event:annotationAdded">Tools.TextUnderlineCreateTool#event:annotationAdded</a></li><li><a href="Tools.TextUnderlineCreateTool.html#event:annotationCreated">Tools.TextUnderlineCreateTool#event:annotationCreated</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: Tool</h1>
+<section>
+
+<header>
+    
+        <h2>
+            <span class="ancestors"><a href="Tools.html">Tools</a>.</span>
+        
+        Tool
+        </h2>
+        
+            <div class="class-description"><p>Represents the base class for DocumentViewer UI tools.</p></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="Tool"><span class="type-signature"></span>new Tool(docViewer)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>docViewer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="CoreControls.DocumentViewer.html">CoreControls.DocumentViewer</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>an instance of DocumentViewer.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>docViewer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="CoreControls.DocumentViewer.html">CoreControls.DocumentViewer</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the reference to the current DocumentViewer instance</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageCoordinates</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="Tools.html#.PageCoordinate">Tools.PageCoordinate</a>></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>an array of page coordinates this tool currently holds. The default is index 0 for the mouse left down and index 1 for mouse left up.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ENABLE_TEXT_SELECTION</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A boolean indicating whether text selection is enabled</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ENABLE_AUTO_SWITCH</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A boolean indicating whether the text select tool should automatically switch if the cursor is hovering over text or not</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="contextMenu"><span class="type-signature"></span>contextMenu(e)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when a context menu should be shown.
+Use e.preventDefault to disable the default browser context menu</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the event object</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getDocumentViewer"><span class="type-signature"></span>getDocumentViewer()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns the instance of DocumentViewer for this tool.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>the instance of DocumentViewer for this tool.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="CoreControls.DocumentViewer.html">CoreControls.DocumentViewer</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="keyDown"><span class="type-signature"></span>keyDown(e)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when a keyboard key is down.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the event object containing keyboard key data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="mouseDoubleClick"><span class="type-signature"></span>mouseDoubleClick(e)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when the mouse left button is double clicked.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the event object containing mouse coordinates.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="mouseLeftDown"><span class="type-signature"></span>mouseLeftDown(e)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when the left mouse button is down</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the event object containing mouse coordinates.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="mouseLeftUp"><span class="type-signature"></span>mouseLeftUp(e)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when the left mouse button is up.
+Typically, annotations are created and added to the annotation manager at this point.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the event object containing mouse coordinates.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="mouseMove"><span class="type-signature"></span>mouseMove(e)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when the mouse moves.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the event object containing mouse coordinates.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="switchIn"><span class="type-signature"></span>switchIn(oldTool)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when this tool is selected.
+Typically use for changing mouse cursors, and initializing states for the tool.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>oldTool</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Tools.Tool.html">Tools.Tool</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the Tool class that was previously selected.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="switchOut"><span class="type-signature"></span>switchOut(newTool)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>The function called when this tool is deselected.
+Typically use for changing mouse cursors, and cleaning up states for the tool.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>newTool</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Tools.Tool.html">Tools.Tool</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the Tool class that was newly selected.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
+	
+		on June 29th 2017, 12:02:55 pm
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <script src="../../jquery-3.2.1.min.js"></script>
+    <script src="../../lib/WebViewer.min.js"></script>
+    <script src="../../lib/html5/ControlUtils.js"></script>
+    <script>
+
+    $(function() {
+        var queryParams = window.ControlUtils.getQueryStringMap(false);
+        var docType = queryParams.getString('doctype', 'xod');
+
+        var viewerElement = document.getElementById('viewer');
+        var myWebViewer = new PDFTron.WebViewer({
+            type: "html5",
+            path: "../../lib",
+            initialDoc: "../files/form-actions." + docType,
+            documentType: docType,
+            documentId: "form-actions",
+            config: "config.js",
+            enableAnnotations: true,
+            streaming: false
+        }, viewerElement);
+    });
+    </script>
+
+</head>
+
+<body style="width:100%;height:100%;margin:0px;padding:0px;overflow:hidden">
+    <div id="viewer" style="height: 100%; overflow: hidden;"></div>
+</body>
+</html>

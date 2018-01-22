@@ -1,0 +1,95 @@
+.keyreq {
+  width:710px;
+ /* border:1px solid silver;
+  padding:10px;*/
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #24292e;
+  word-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.keyreq * {
+  box-sizing: border-box;
+}
+
+.keyreq strong {
+  font-weight: 600;
+}
+
+.keyreq h3 {
+  font-weight: 600;
+  text-align:center;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.request_blurb{
+  margin:10px 10px 20px 20px;
+}
+
+.form_input,
+.form_textarea
+{
+  width: 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.unfulfilled .labelTitle{
+  border-left: 3px solid pink;
+}
+
+.unfulfilled .labelTitle::after{
+  content:"*";
+}
+
+.input_check{
+  width:545px;
+  float:right;
+}
+
+.form_desc input{
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.form_desc button{
+  line-height: inherit;
+  font-size: inherit;
+  padding:0px;
+}
+
+.form_desc{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+.form_desc:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form_desc label{
+  width : 150px;
+  margin: 0;
+  margin-right: 15px;
+  vertical-align: center;
+  display: block;
+  float: left;
+}
+
+.labelTitle{
+  text-align: right;
+}
+
+.fine_print{
+  color:#777;
+  font-size: 0.8em;
+  margin:20px 20px 18px 20px;
+}

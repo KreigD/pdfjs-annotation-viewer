@@ -1,0 +1,7 @@
+AddType image/vnd.microsoft.icon .cur
+AddType application/json .json
+AddType text/cache-manifest .appcache
+AddType application/octet-stream .mem
+AddType application/octet-stream .res
+AddType application/x-pnacl .pexe
+AddType application/octet-stream .nmf

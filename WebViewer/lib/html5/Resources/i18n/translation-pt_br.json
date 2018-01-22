@@ -1,0 +1,119 @@
+{
+    "controlbar": {
+        "fullScreen": "Tela Cheia",
+        "search": "Localizar",
+        "textSelect": "Selecionar Texto",
+        "pan": "Ferramenta Mão",
+        "fitWidth": "Ajustar à Largura",
+        "fitPage": "Ajustar à Página Inteira",
+        "zoom": "Zoom",
+        "nextPage": "Próxima Página",
+        "previousPage": "Página Anterior",
+        "rotate": "Girar 90°",
+        "pageLayoutModes": "Modos de Exibição da Página",
+        "layoutMode": {
+            "single": "Individual",
+            "continuous": "Contínuo",
+            "facing": "Face",
+            "facingContinuous": "Face Contínua",
+            "cover": "Capa",
+            "coverContinuous": "Capa Contínua"
+        },
+        "toggleSidePanel": "Mostrar/Esconder Painel Lateral"
+    },
+    
+    "sidepanel": {
+        "thumbnails": "Miniaturas da Página",
+        "outline": "Índice",
+        "outlineTab": {
+            "noOutlines": "Este documento não contém nenhum índice."
+        },
+        "fullDocumentSearch": "Busca pelo Documento Inteiro",
+        "searchTab": {
+            "buttonGo": "Buscar",
+            "wholeWordOnly": "Somente Palavras Inteiras",
+            "caseSensitive": "Diferenciar Maiúsculas/Minúsculas",
+            "noResults": "Nenhum resultado encontrado."
+        }
+    },
+    
+    "annotations": {
+        "permissionEdit": "Você não tem permissões para editar esta anotação.",
+        "permissionDelete": "Você não tem permissões para excluir esta anotação.",
+        "readOnlyDelete": "Não é possível excluir anotações em modo somente leitura.",
+        "readOnlyCreate": "Não é possível criar novas anotações em modo somente leitura.",
+        "readOnlyEdit": "Não é possível editar anotações em modo somente leitura.",
+        "markupOffCreate": "Não é possível criar novas anotações quando as marcações estiverem desabilitadas.",
+        
+        "pageNumber": "Página __number__",
+        
+        "types": {
+            "stickyNote": "Nota Auto-Adesiva",
+            "highlight": "Realçar Texto",
+            "underline": "Sublinhar Texto",
+            "strikeout": "Tachar Texto",
+            "rectangle": "Retângulo",
+            "ellipse": "Oval",
+            "line": "Linha",
+            "freeHand": "Forma Livre"
+        },
+
+        "properties": {
+            "fill": "Preenchimento",
+            "stroke": "Cor da Linha",
+            "thickness": "Espessura"
+        },
+
+        "annotations": "Anotações",
+        "buttonHide": "Esconder",
+        "buttonShow": "Mostrar",
+        "buttonSave": "Salvar",
+        "toggleAnnotations": "Mostrar/Esconder Anotações",
+        "saveAnnotations": "Salvar Anotações",
+        
+        "tooltips": {
+            "edit": "Editar Anotação",
+            "stickyNote": "Nota Auto-Adesiva",
+            "highlight": "Realçar Texto",
+            "underline": "Sublinhar Texto",
+            "strikeout": "Tachar Texto",
+            "rectangle": "Retângulo",
+            "ellipse": "Oval",
+            "line": "Linha",
+            "freeHand": "Forma Livre"
+        }
+    },
+    
+    "unsupportedBrowser": "Você está visualizando esta aplicação com um browser não suportado. Por favor verifique a lista de browsers suportados:",
+    
+    "endOfDocument": "Fim do documento.",
+    
+    "offline": {
+        "downloadOfflineViewing": "Download para Visualização Offline",
+        "enableOffline": "Habilitar Modo Offline",
+        "disableOffline": "Desabilitar Modo Offline",
+        "cancelDownload": "Cancelar Download"
+    },
+    
+    "annotationPopup": {
+        "buttonDone": "Fim",
+        "buttonDelete": "Excluir",
+        "buttonNote": "Nota",
+        "buttonStroke": "Cor da Linha",
+        "buttonFill": "Cor de Preenchimento",
+        "buttonThickness": "Espessura",
+        "buttonSave": "Salvar"
+    },
+    
+    "mobile": {
+        "bookmarks": {
+            "bookmarks": "Marcadores",
+            "noBookmarks": "Este documento não contém nenhum marcador.",
+            "upOneLevel": "Subir Um Nível"
+        },
+        
+        "thumbnailPageNumber": "__current__ de __total__",
+        
+        "unsupportedBrowser": "Browser não supportado. Canvas não está presente."
+    }
+}

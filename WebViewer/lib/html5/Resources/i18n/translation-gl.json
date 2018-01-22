@@ -1,0 +1,119 @@
+{
+    "controlbar": {
+        "fullScreen": "Pantalla completa",
+        "search": "Pesquisar",
+        "textSelect": "Seleccionar texto",
+        "pan": "Pan",
+        "fitWidth": "Axustar ancho",
+        "fitPage": "Axustar ancho de páxina",
+        "zoom": "Zoom",
+        "nextPage": "Páxina seguinte",
+        "previousPage": "Páxina anterior",
+        "rotate": "Rotar 90°",
+        "pageLayoutModes": "Modos de presentación de páxina",
+        "layoutMode": {
+            "single": "Páxina única",
+            "continuous": "Páxina única continuo",
+            "facing": "Páxinas encaradas",
+            "facingContinuous": "Páxinas encaradas continuo",
+            "cover": "Páxinas encaradas (Portada primeiro)",
+            "coverContinuous": "Páxina encaradas continuo (Portada primeiro)"
+        },
+        "toggleSidePanel": "Conmutador de Panel Lateral"
+    },
+    
+    "sidepanel": {
+        "thumbnails": "Miniaturas",
+        "outline": "Índice",
+        "outlineTab": {
+            "noOutlines": "Este documento non contén índice."
+        },
+        "fullDocumentSearch": "Pesquisa en todo o documento",
+        "searchTab": {
+            "buttonGo": "Ir",
+            "wholeWordOnly": "Só palabras completas",
+            "caseSensitive": "Sensible a May. e Min.",
+            "noResults": "Non se atoparon resultados."
+        }
+    },
+    
+    "annotations": {
+        "permissionEdit": "Non ten permisos para editar esta anotación.",
+        "permissionDelete": "Non ten permisos para eliminar esta anotación.",
+        "readOnlyDelete": "Non se poden eliminar anotacións en modo de só lectura.",
+        "readOnlyCreate": "Non se poden crear anotacións en modo de sólo lectura.",
+        "readOnlyEdit": "Non se poden editar anotacións en modo de sólo lectura.",
+        "markupOffCreate": "Non se poden crear anotacións cando as marcas están desactivadas.",
+        
+        "pageNumber": "Páxina __number__",
+        
+        "types": {
+            "stickyNote": "Nota",
+            "highlight": "Resaltar",
+            "underline": "Subliñar",
+            "strikeout": "Tachar",
+            "rectangle": "Rectángulo",
+            "ellipse": "Elipse",
+            "line": "Liña",
+            "freeHand": "Man alzada"
+        },
+
+        "properties": {
+            "fill": "Recheo",
+            "stroke": "Trazo",
+            "thickness": "Grosor"
+        },
+
+        "annotations": "Anotacións",
+        "buttonHide": "Ocultar",
+        "buttonShow": "Mostrar",
+        "buttonSave": "Gardar",
+        "toggleAnnotations": "Conmutar Anotacións",
+        "saveAnnotations": "Gardar Anotacións",
+        
+        "tooltips": {
+            "edit": "Editar Anotación",
+            "stickyNote": "Nota",
+            "highlight": "Resaltar texto",
+            "underline": "Subliñar texto",
+            "strikeout": "Tachar texto",
+            "rectangle": "Rectángulo",
+            "ellipse": "Elipse",
+            "line": "Liña",
+            "freeHand": "Man alzada"
+        }
+    },
+    
+    "unsupportedBrowser": "Está vendo a aplicación cun navegador que non está soportado. Por favor, revise o listado de navegadores soportados:",
+    
+    "endOfDocument": "Final do documento.",
+    
+    "offline": {
+        "downloadOfflineViewing": "Descargar para visualizado fora de liña",
+        "enableOffline": "Activar modo Offline",
+        "disableOffline": "Desactivar modo Offline",
+        "cancelDownload": "Cancelar descarga"
+    },
+    
+    "annotationPopup": {
+        "buttonDone": "Feito",
+        "buttonDelete": "Eliminar",
+        "buttonNote": "Nota",
+        "buttonStroke": "Color de trazo",
+        "buttonFill": "Color de recheo",
+        "buttonThickness": "Grosor",
+        "buttonSave": "Gardar"
+    },
+    
+    "mobile": {
+        "bookmarks": {
+            "bookmarks": "Marcadores",
+            "noBookmarks": "Este documento non contén marcadores.",
+            "upOneLevel": "Subir un nivel"
+        },
+        
+        "thumbnailPageNumber": "__current__ de __total__",
+        
+        "unsupportedBrowser": "Navegador non soportado. Canvas non está presente."
+    }
+}
